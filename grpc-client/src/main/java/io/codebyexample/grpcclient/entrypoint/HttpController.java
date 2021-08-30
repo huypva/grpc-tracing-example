@@ -16,9 +16,9 @@ public class HttpController {
   @Autowired
   private HelloWorldClient helloWorldClient;
 
-  @RequestMapping("/hello_a")
+  @RequestMapping("/hello")
   public String helloword() throws InterruptedException {
-    String serviceBMessage = helloWorldClient.hello("service_b");
+    String serviceBMessage = helloWorldClient.hello("server");
     Thread.sleep(10);
     return serviceBMessage;
   }

@@ -28,9 +28,11 @@ The example project about tracing in grpc api
     [Docker Compose](https://github.com/docker/compose)
 
 ## Start project
-## Start project in local
+### Start project in local
 
-```
+- Start Jaeger server
+
+```shell script
 docker run -d --name jaeger \
   -p 5775:5775/udp \
   -p 6831:6831/udp \
@@ -43,9 +45,26 @@ docker run -d --name jaeger \
   jaegertracing/all-in-one:1.25
 ```
 
-## Start project in docker 
+- Start client service
+
+```shell script
+cd grpc-client
+mvn clean package
+mvn spring-boot:run
+```
+
+- Start server service
+
+```shell script
+cd grpc-server
+mvn clean package
+mvn spring-boot:run
+```
+
+### Start project in docker 
 
 - Start project
+
 ```console
 docker-compose up -d
 ```
@@ -57,6 +76,17 @@ docker-compose up -d
 ```console
 docker-compose down
 ```
+
+## Send request & watch tracer
+
+- Send test request
+
+```shell script
+curl http://localhost:8081/hello
+```
+
+- Go to http://localhost:16686/
+![Jeager](./assets/images/jeager.png)
 
 ## Contribute
 
