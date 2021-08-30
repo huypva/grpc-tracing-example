@@ -4,13 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.codebyexample</groupId>
-    <artifactId>springboot-service-template</artifactId>
+    <artifactId>grpc-tracing-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Parent</name>
 
     <modules>
-        <module>hello-world</module>
+        <module>grpc-client</module>
+        <module>grpc-server</module>
     </modules>
 
 </project>
