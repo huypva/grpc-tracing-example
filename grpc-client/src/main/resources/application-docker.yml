@@ -1,0 +1,2 @@
+grpc.client.service-b.address: static://service-b:8082
+opentracing.jaeger.udp-sender.host: jaeger

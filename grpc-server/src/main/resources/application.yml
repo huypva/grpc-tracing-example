@@ -1,0 +1,15 @@
+spring.application.name: grpc-server
+spring.profiles.active: local
+
+grpc.server.port: 8082
+
+opentracing.jaeger:
+  service-name: grpc-server
+  enabled: true
+  udp-sender:
+    host: localhost
+    port: 6831
+  log-spans: true
+  enable-b3-propagation: false
+  probabilistic-sampler:
+    sampling-rate: 1.0

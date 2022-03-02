@@ -48,33 +48,33 @@ docker run -d --name jaeger \
 - Start client service
 
 ```shell script
-cd grpc-client
-mvn clean package
-mvn spring-boot:run
+$ cd grpc-client
+$ ../mvnw clean package
+$ ../mvnw spring-boot:run
 ```
 
 - Start server service
 
 ```shell script
-cd grpc-server
-mvn clean package
-mvn spring-boot:run
+$ cd grpc-server
+$ ../mvnw clean package
+$ ../mvnw spring-boot:run
 ```
 
 ### Start project in docker 
 
 - Start project
 
-```console
-docker-compose up -d
+```shell script
+$ docker-compose up -d
 ```
 
 - Some request & test
 
 
 - Stop project
-```console
-docker-compose down
+```shell script
+$ docker-compose down
 ```
 
 ## Send request & watch tracer
@@ -82,7 +82,7 @@ docker-compose down
 - Send test request
 
 ```shell script
-curl http://localhost:8081/hello
+$ curl http://localhost:8081/hello
 ```
 
 - Go to http://localhost:16686/

@@ -1,0 +1,20 @@
+server.port: 8081
+spring.application.name: grpc-client
+spring.profiles.active: local
+
+grpc.client.helloworld:
+  address: static://localhost:8082
+  enableKeepAlive: true
+  keepAliveWithoutCalls: true
+  negotiationType: plaintext
+
+opentracing.jaeger:
+  service-name: grpc-client
+  enabled: true
+  udp-sender:
+    host: localhost
+    port: 6831
+  log-spans: true
+  enable-b3-propagation: false
+  probabilistic-sampler:
+    sampling-rate: 1.0
