@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>io.codebyexample</groupId>
+	<groupId>io.github.huypva</groupId>
 	<artifactId>grpc-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Grpc Client</name>
