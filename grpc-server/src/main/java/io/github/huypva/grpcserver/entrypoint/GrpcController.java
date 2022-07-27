@@ -14,7 +14,7 @@ public class GrpcController extends HelloWorldGrpc.HelloWorldImplBase {
 
   @Override
   public void sayHello(HelloRequest req, StreamObserver<HelloResponse> responseObserver) {
-    HelloResponse reply = HelloResponse.newBuilder().setMessage("Hello ==> " + req.getName()).build();
+    HelloResponse reply = HelloResponse.newBuilder().setMessage("Hello " + req.getName() + "!").build();
     try {
       Thread.sleep(10);
     } catch (InterruptedException e) {
