@@ -1,6 +1,6 @@
-package io.codebyexample.grpcclient.entrypoint;
+package io.github.huypva.grpcclient.entrypoint;
 
-import io.codebyexample.grpcclient.dataprovider.HelloWorldClient;
+import io.github.huypva.grpcclient.dataprovider.HelloWorldClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

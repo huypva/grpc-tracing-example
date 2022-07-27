@@ -1,8 +1,8 @@
-package io.codebyexample.grpcclient.dataprovider;
+package io.github.huypva.grpcclient.dataprovider;
 
-import io.codebyexample.helloword.grpc.HelloRequest;
-import io.codebyexample.helloword.grpc.HelloResponse;
-import io.codebyexample.helloword.grpc.HelloWorldGrpc.HelloWorldBlockingStub;
+import io.github.huypva.grpc.helloworld.HelloRequest;
+import io.github.huypva.grpc.helloworld.HelloResponse;
+import io.github.huypva.grpc.helloworld.HelloWorldGrpc.HelloWorldBlockingStub;
 import io.grpc.StatusRuntimeException;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;

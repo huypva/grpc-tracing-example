@@ -1,6 +1,5 @@
-package io.codebyexample.helloworld;
+package io.github.huypva.grpcclient;
 
-import io.codebyexample.grpcclient.GrpcClientApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

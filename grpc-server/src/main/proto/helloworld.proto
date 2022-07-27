@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "io.codebyexample.helloword.grpc";
+option java_package = "io.github.huypva.grpcserver.helloword";
 option java_outer_classname = "HelloWorldProto";
 
 service HelloWorld {

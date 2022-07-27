@@ -1,4 +1,4 @@
-package io.codebyexample.grpcserver;
+package io.github.huypva.grpcserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

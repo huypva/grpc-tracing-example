@@ -1,8 +1,8 @@
-package io.codebyexample.grpcserver.entrypoint;
+package io.github.huypva.grpcserver.entrypoint;
 
-import io.codebyexample.helloword.grpc.HelloRequest;
-import io.codebyexample.helloword.grpc.HelloResponse;
-import io.codebyexample.helloword.grpc.HelloWorldGrpc;
+import io.github.huypva.grpcserver.helloword.HelloRequest;
+import io.github.huypva.grpcserver.helloword.HelloResponse;
+import io.github.huypva.grpcserver.helloword.HelloWorldGrpc;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 

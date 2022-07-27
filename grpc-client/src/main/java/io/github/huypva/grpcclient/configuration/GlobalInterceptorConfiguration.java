@@ -1,4 +1,4 @@
-package io.codebyexample.grpcclient.configuration;
+package io.github.huypva.grpcclient.configuration;
 
 import io.opentracing.Tracer;
 import io.opentracing.contrib.grpc.TracingClientInterceptor;

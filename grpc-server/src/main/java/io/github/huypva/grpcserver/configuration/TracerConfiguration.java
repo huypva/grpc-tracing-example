@@ -1,4 +1,4 @@
-package io.codebyexample.grpcserver.configuration;
+package io.github.huypva.grpcserver.configuration;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package io.codebyexample.grpcclient.dataprovider;
+package io.github.huypva.grpcclient.dataprovider;
 
 /**
  * @author huypva
