@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloWorldGrpcClient implements HelloWorldClient {
 
-  @GrpcClient("helloworld")
+  @GrpcClient("grpc-server")
   private HelloWorldBlockingStub helloWorldBlockingStub;
 
   @Override

@@ -10,6 +10,7 @@ opentracing.jaeger:
     host: localhost
     port: 6831
   log-spans: true
-  enable-b3-propagation: false
+  enable-b3-propagation: true
+  enable-w3c-propagation: true
   probabilistic-sampler:
     sampling-rate: 1.0

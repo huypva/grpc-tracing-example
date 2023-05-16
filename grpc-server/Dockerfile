@@ -17,4 +17,4 @@ ARG DEPENDENCY=/workdir/grpc-server/target/dependency
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=builder ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=builder ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java","-cp","app:app/lib/*","io.codebyexample.grpcserver.GrpcServerApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","io.github.huypva.grpcserver.GrpcServerApplication"]

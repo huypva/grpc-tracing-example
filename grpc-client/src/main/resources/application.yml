@@ -2,7 +2,7 @@ server.port: 8081
 spring.application.name: grpc-client
 spring.profiles.active: local
 
-grpc.client.helloworld:
+grpc.client.grpc-server:
   address: static://localhost:8082
   enableKeepAlive: true
   keepAliveWithoutCalls: true
@@ -15,6 +15,7 @@ opentracing.jaeger:
     host: localhost
     port: 6831
   log-spans: true
-  enable-b3-propagation: false
+  enable-b3-propagation: true
+  enable-w3c-propagation: true
   probabilistic-sampler:
     sampling-rate: 1.0

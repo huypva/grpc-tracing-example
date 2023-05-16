@@ -11,6 +11,7 @@ services:
       - jaeger
     networks:
       - grpc-tracing-network
+
   grpc-server:
     build: grpc-server
     container_name: 'grpc-server'
@@ -22,6 +23,7 @@ services:
       - jaeger
     networks:
       - grpc-tracing-network
+
   jaeger:
     image: jaegertracing/all-in-one:1.17
     ports:
@@ -35,6 +37,7 @@ services:
       - 9411:9411
     networks:
       - grpc-tracing-network
+      
 networks:
   grpc-tracing-network:
     driver: bridge
